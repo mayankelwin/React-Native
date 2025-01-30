@@ -15,10 +15,15 @@ export function BoxInfo({ titleganhos, titledata, titlemoney}: Props){
   const toggleVisibility = (): void => {
     setIsVisible((prevState) => !prevState);
   };
-    //Visibilidade em forma de asteristico
-    const maskMoney = (money: string): string => {
-      return money.replace(/./g, '*'); 
-    };
+
+  const formatMoney = (money: string): string => {
+    const numericValue = parseFloat(money.replace(',', '.')) || 0;
+    return numericValue.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+  };
+  
+  const maskMoney = (money: string): string => {
+    return '----'; 
+  };
     return (
         <Container>
             <RowTitle>
@@ -34,10 +39,11 @@ export function BoxInfo({ titleganhos, titledata, titlemoney}: Props){
             </RowTitle>
 
             <RowMoney>
-            <TitleMoney>R$ {isVisible ? titlemoney : maskMoney(titlemoney)}</TitleMoney> 
-
+            <TitleMoney>
+  {isVisible ? formatMoney(titlemoney) : maskMoney(titlemoney)}
+</TitleMoney>
             <TouchableOpacity onPress={toggleVisibility}>
-        <Icon name={isVisible ? 'eye-off' : 'eye' } size={35} /> 
+        <Icon name={isVisible ? 'eye' : 'eye-off' } size={30} /> 
       </TouchableOpacity>
             </RowMoney>
         </Container>

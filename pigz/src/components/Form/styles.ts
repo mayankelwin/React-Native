@@ -5,8 +5,8 @@ import Feather  from "@expo/vector-icons/Feather";
 export const Email = styled(TextInput)`
   flex: 1;
 
-  min-height: 56px;
-  max-height: 56px;
+  min-height: 48px;
+  max-height: 48px;
 
   background-color: ${({ theme }) => theme.colors.base.white};
 
@@ -21,9 +21,7 @@ export const Senha = styled(TextInput)`
   flex: 1;
 
   width: 100%;
-  height: 90%;
-
-  background-color: ${({ theme }) => theme.colors.base.white};
+  height: 48;
 
   color: ${({ theme }) => theme.colors.base.gray500};
   border-radius: 20px;
@@ -46,7 +44,7 @@ export const Subtitle = styled.Text`
 `;
 export const BoxInput = styled.View`
   width: 100%;
-  height: 56px;
+  height: 48px;
   border-width: 1px;
   flex-direction: row;
   border-radius: 20px;
@@ -64,8 +62,8 @@ color: ${({ theme }) => theme.colors.base.Orange};
 `;
 
 export const Btn = styled(TouchableOpacity)`
-  min-height: 56px;
-  max-height: 56px;
+width: 100%;
+height: 50px;
 border-radius: 20px;
 padding: 16px;
 background-color: #FF881F;
@@ -83,12 +81,10 @@ export const TitleEsqueceu = styled.Text`
   text-decoration: underline;
   `;
 
-
-
 export const BoxSingIn = styled.View`
 width: 100%;
 margin-top: 36px;
-margin-bottom: 97px;
+margin-bottom: 50px;
 
 align-items: center;
 justify-content: center;
@@ -104,6 +100,7 @@ export const TextSingIn = styled.Text`
 `
 
 export const BtnCriarConta = styled(TouchableOpacity)`
+
 margin-left: 10px;
 align-items: center;
 justify-content: center;
@@ -149,7 +146,7 @@ width: 100%;
 `
 export const BtnGoogle = styled(TouchableOpacity)`
   width: 100%;
-  height: 56px;
+  height: 48px;
   border-width: 1px;
   flex-direction: row;
   border-radius: 20px;
@@ -159,13 +156,13 @@ export const BtnGoogle = styled(TouchableOpacity)`
   justify-content: center;
 `
 export const ImgGoogle = styled.Image`
-margin-right: 60px;
+margin-right: 25px;
 width: 25px;
 height: 25px;
 `
 export const TitleGoogle = styled.Text`
 text-align: center;
-margin-right: 60px;
+
 color: ${({ theme }) => theme.colors.base.gray500};
 font-family: ${({ theme }) => theme.font_family.bold};
 font-size: ${({ theme }) => theme.font_size.md};

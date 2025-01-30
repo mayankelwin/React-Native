@@ -1,6 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
 import { Header } from "../../components/Header";
-import { Box, Box2, Box3, Box4, BoxColeta, BoxEndereco, BoxEntrega, BoxInfo1, BoxInfo2, BoxInfo3, BoxInfo4, BoxTitle1, Btn, Btn2, CircleIcon, Container, Endereco, Icon, IconCheck, IconClose, SubTitle, SubTitle3 } from "./styles";
+import { Border, Box, Box2, Box3, Box4, BoxColeta, BoxEndereco, BoxEntrega, BoxInfo1, BoxInfo2, BoxInfo3, BoxInfo4, BoxTitle1, Btn, Btn2, CircleIcon, Container, Endereco, Icon, IconCheck, IconClose, SubTitle, SubTitle3 } from "./styles";
 
 export function NovaEntrega(){
     const navigation = useNavigation()
@@ -27,6 +27,7 @@ export function NovaEntrega(){
              #6789
             </BoxInfo1>
             </BoxTitle1>
+             <Border></Border>
               
               <Box2>
               <SubTitle>Tempo Estimado</SubTitle>
@@ -67,8 +68,6 @@ export function NovaEntrega(){
                  <Endereco >Distancia: 6km</Endereco>
                 </BoxEndereco>
                 </BoxColeta>
-           
-
            
                 
               </Box4>

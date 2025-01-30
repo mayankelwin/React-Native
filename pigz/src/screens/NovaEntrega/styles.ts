@@ -20,7 +20,7 @@ margin-top: 30px;
 
 export const SubTitle = styled.Text`
 text-align: center;
-font-size: 19px ;
+font-size: ${({theme})=> theme.font_size.md}px;
 font-family: ${({theme})=> theme.font_family.regular};
 color: ${({theme})=> theme.colors.base.gray500};
 `
@@ -31,10 +31,17 @@ justify-content: space-between;
 flex-direction: row;
 margin-top: 1px;
 `
+export const Border = styled.View`
+
+justify-content: center;
+width: 100%;
+border-top-width: 2px; 
+border-top-color: ${({ theme }) => theme.colors.base.gray300};
+`
 
 export const BoxInfo1 = styled.Text`
 
-font-size: 25px ;
+font-size: ${({theme})=> theme.font_size.md}px;
 font-family: ${({theme})=> theme.font_family.bold};
 color: ${({theme})=> theme.colors.base.Orange_dark};
 `
@@ -48,7 +55,7 @@ margin-top: 33px;
 `
 export const BoxInfo2 = styled.Text`
 
-font-size: 45px ;
+font-size: ${({theme})=> theme.font_size.xg}px;
 font-family: ${({theme})=> theme.font_family.bold};
 color: ${({theme})=> theme.colors.base.Orange_dark};
 `
@@ -61,7 +68,7 @@ gap: 20px;
 
 height: 56px;
 width: 100%;
-margin-top: 30px ;
+margin-top: 20px ;
 background-color: ${({theme}) => theme.colors.base.Orange};
 
 border-radius: 20px;
@@ -70,7 +77,7 @@ align-items: center;
 `
 export const Icon = styled(FontAwesome6)`
 color: ${({theme})=> theme.colors.base.white};
-font-size: 24px;
+font-size: 20px;
 
 `
 
@@ -80,7 +87,7 @@ export const BoxEntrega = styled.View`
 
 export const BoxInfo3 = styled.Text`
 
-font-size: 19px ;
+font-size: ${({theme})=> theme.font_size.md}px;
 font-family: ${({theme})=> theme.font_family.bold};
 color: ${({theme})=> theme.colors.base.white};
 `
@@ -90,7 +97,7 @@ justify-content: center;
 align-items: center;
 
 text-align: center;
-font-size: 16px ;
+font-size: ${({theme})=> theme.font_size.sm}px;
 font-family: ${({theme})=> theme.font_family.regular};
 color: ${({theme})=> theme.colors.base.white};
 
@@ -122,18 +129,18 @@ font-size: 24px;
 export const BoxInfo4 = styled.Text`
 justify-content: center;
 padding-left: 20px;
-font-size: 20px ;
+font-size: ${({theme})=> theme.font_size.md}px;
 font-family: ${({theme})=> theme.font_family.bold};
 color: ${({theme})=> theme.colors.base.Orange_dark};
 `
 
 export const BoxEndereco = styled.View`
-width: 80%;
+width: 100%;
 `
 export const Endereco = styled.Text`
 
 padding-left: 20px;
-font-size: 16px ;
+font-size: ${({theme})=> theme.font_size.md}px;
 font-family: ${({theme})=> theme.font_family.regular};
 color: ${({theme})=> theme.colors.base.black};
 `
@@ -149,7 +156,7 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 
-height: 56px;
+height: 48px;
 width: 100%;
 margin-top: 30px ;
 background-color: ${({theme}) => theme.colors.base.Orange};
@@ -164,7 +171,7 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 
-height: 56px;
+height: 48px;
 width: 100%;
 margin-top: 10px ;
 border: 1px solid ${({theme}) => theme.colors.base.Orange};

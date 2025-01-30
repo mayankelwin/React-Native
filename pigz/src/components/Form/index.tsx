@@ -54,7 +54,7 @@ export function InputEmail({
   
   // Validação de login
   const [gmail, setGmail] = useState<string>('pigz@gmail.com'); 
-  const [password, setPassword] = useState<string>('123'); 
+  const [password, setPassword] = useState<string>('pigzpigz'); 
   const [loading, setLoading] = useState<boolean>(false);
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const [error, setError] = useState<string>('');
@@ -74,7 +74,7 @@ export function InputEmail({
       return;
     }
 
-    if (gmail !== 'pigz@gmail.com' || password !== '123') {
+    if (gmail !== 'pigz@gmail.com' || password !== 'pigzpigz') {
       Alert.alert('Erro', 'Usuário não cadastrado ou credenciais incorretas.');
       setLoading(false);
       return;

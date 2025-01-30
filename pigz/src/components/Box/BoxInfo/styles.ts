@@ -39,7 +39,7 @@ justify-content: space-between;
 `
 
 export const TitleMoney = styled.Text`
-margin-left: 6px;
+margin-left: 15px;
 font-size: 30px ;
 font-family:${({theme})=> theme.font_family.bold};
 color: ${({theme})=> theme.colors.base.white};
@@ -48,5 +48,7 @@ color: ${({theme})=> theme.colors.base.white};
 
 export const Icon = styled(Feather)`
 color: ${({ theme }) => theme.colors.base.white};
+margin-top: 5px;
+margin-right: 5px;
 
 `;

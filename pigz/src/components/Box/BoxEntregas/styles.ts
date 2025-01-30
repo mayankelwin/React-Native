@@ -3,9 +3,9 @@ import styled from "styled-components/native";
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
 export const Container = styled.View`
-padding:16px;
+padding: 15px;
 
-height: 200px;
+height: 220px;
 width: 100%;
 margin-top: 30px ;
 margin-bottom: 100px;
@@ -38,27 +38,22 @@ margin-top: 5px;
 
 export const Input = styled(TextInput)`
 
-
-width: 70%;
-height: 49px;
-
-background-color: ${({ theme }) => theme.colors.base.white};
+width: 75%;
+height: 48px;
 
 color: ${({ theme }) => theme.colors.base.gray500};
-border: 1px solid #fa641e;
+border: 1px solid  #fa641e;
 border-radius: 15px;
 
-
-padding: 16px;
+padding: 12px;
 `
 
 export const Btn = styled(TouchableOpacity)`
-width: 56px;
-height: 49px;
+width: 70px;
+height: 55px;
 
 border-radius: 20px;
 
-padding: 16px;
 
 background-color: ${({theme}) => theme.colors.base.Orange};
 
@@ -68,7 +63,7 @@ justify-content: center;
 `
 export const TitleBtn = styled.Text`
 text-align: center;
-font-size: ${({theme}) => theme.font_size.md};
+font-size: ${({theme}) => theme.font_size.sm};
 color: ${({theme}) => theme.colors.base.white};
 font-family: ${({theme}) => theme.font_family.bold};;
 text-align: center;
@@ -81,11 +76,11 @@ flex-direction: row;
 margin-top: 10px;
 
 width: 100%;
-height: 55px;
+height: 48px;
 
 border-radius: 20px;
 
-padding: 16px;
+padding: 12px;
 
 background-color: ${({theme}) => theme.colors.base.Orange};
 
