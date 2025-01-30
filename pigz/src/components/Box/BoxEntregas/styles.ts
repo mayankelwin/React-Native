@@ -16,14 +16,14 @@ border-radius: 20px;
 
 `
 export const Title = styled.Text`
-font-size: 16px ;
+font-size: ${({theme}) => theme.font_size.md};
 font-family:${({theme})=> theme.font_family.bold};
 color: ${({theme})=> theme.colors.base.black};
 
 `
 
 export const SubTitle = styled.Text`
-font-size: 13px ;
+font-size: ${({theme}) => theme.font_size.sm};
 font-family:${({theme})=> theme.font_family.regular};
 color: ${({theme})=> theme.colors.base.gray400};
 
@@ -68,7 +68,7 @@ justify-content: center;
 `
 export const TitleBtn = styled.Text`
 text-align: center;
-font-size: 15px;
+font-size: ${({theme}) => theme.font_size.md};
 color: ${({theme}) => theme.colors.base.white};
 font-family: ${({theme}) => theme.font_family.bold};;
 text-align: center;

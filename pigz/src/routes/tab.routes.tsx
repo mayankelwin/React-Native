@@ -35,6 +35,7 @@ export const Tabs: React.FC = () => {
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             let iconName: string;
+            let iconSize = focused ? 24 : 20;
   
             switch (route.name) {
               case "Relatorios":
@@ -51,13 +52,14 @@ export const Tabs: React.FC = () => {
                 break;
             }
   
-            return <Ionicons name={iconName} size={size} color={color} />;
+            return <Ionicons name={iconName} size={iconSize} color={color} />;
           },
+          tabBarLabelStyle: { marginTop: 5, fontSize: 10 },
           tabBarActiveTintColor: "#FF881F",
           tabBarInactiveTintColor: "gray",
           headerShown: false,
           tabBarStyle: {
-            height: 60,
+            height: 70,
             paddingTop: 10,
             paddingBottom: 10,
             borderTopWidth: 0,
